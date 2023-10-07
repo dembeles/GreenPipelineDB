@@ -16,6 +16,16 @@ To build and install the release of PostgreSQL that we modify, you will find the
 -  Compiler: gcc version 4.8 or higher, java 8 or higher,
 -  Driver: Watts Up? Pro power meter (Optional)
 
+## JavaApp
+The GUI module allows users to set specific parameter values, observe real-time energy consumption for queries, visualize execution plans, and compare energy prediction values across the three learning techniques. 
+
+## Wattsup
+Contains the driver of Watts Up? PRO for Linux.
+
+
+## Postgresql-10.3
+Our modied version of the PostgreSQL DBMS with the energy dimension.
+
 ## For Power Estimation (necessary librairies)
 ### Rjava:(https://cran.r-project.org/web/packages/rJava/index.html)
 
