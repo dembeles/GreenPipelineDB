@@ -1,0 +1,93 @@
+2020-11-14 11:00:46.032 CET [20825] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-11-14 11:00:46.115 CET [20825] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-11-14 11:00:46.268 CET [20826] LOG:  database system was shut down at 2020-11-14 10:58:52 CET
+2020-11-14 11:00:46.318 CET [20825] LOG:  database system is ready to accept connections
+2020-11-14 11:05:11.005 CET [20898] LOG:  compare_path_costs:	total_cost_p1: 1.020000	power_cost_p1: 39.909996	total_cost_p2: 12.157500	power_cost_p2: 39.909996
+	
+2020-11-14 11:05:11.005 CET [20898] STATEMENT:  SELECT d.datname as "Name",
+	       pg_catalog.pg_get_userbyid(d.datdba) as "Owner",
+	       pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",
+	       d.datcollate as "Collate",
+	       d.datctype as "Ctype",
+	       pg_catalog.array_to_string(d.datacl, E'\n') AS "Access privileges"
+	FROM pg_catalog.pg_database d
+	ORDER BY 1;
+2020-11-14 11:05:11.005 CET [20898] LOG:  compare_path_costs:	total_cost_p1: 1.020000	power_cost_p1: 39.909996	total_cost_p2: 12.157500	power_cost_p2: 39.909996
+	
+2020-11-14 11:05:11.005 CET [20898] STATEMENT:  SELECT d.datname as "Name",
+	       pg_catalog.pg_get_userbyid(d.datdba) as "Owner",
+	       pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",
+	       d.datcollate as "Collate",
+	       d.datctype as "Ctype",
+	       pg_catalog.array_to_string(d.datacl, E'\n') AS "Access privileges"
+	FROM pg_catalog.pg_database d
+	ORDER BY 1;
+2020-11-14 11:05:44.982 CET [20914] FATAL:  database "tpch" does not exist
+2020-11-14 11:11:41.637 CET [20925] ERROR:  could not open file "/home/postgres/Documents/tpch/200/region.tbl" for reading: No such file or directory
+2020-11-14 11:11:41.637 CET [20925] HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+2020-11-14 11:11:41.637 CET [20925] STATEMENT:  COPY  region FROM '/home/postgres/Documents/tpch/200/region.tbl' WITH DELIMITER  AS '|' ;
+2020-11-14 11:12:16.638 CET [20925] ERROR:  extra data after last expected column
+2020-11-14 11:12:16.638 CET [20925] CONTEXT:  COPY region, line 1: "0|AFRICA|lar deposits. blithely final packages cajole. regular waters are final requests. regular ac..."
+2020-11-14 11:12:16.638 CET [20925] STATEMENT:  COPY  region FROM STDIN WITH DELIMITER  AS '|' ;
+2020-11-14 11:18:46.092 CET [20925] LOG:  compare_path_costs:	total_cost_p1: 373521.765833	power_cost_p1: 39.910000	total_cost_p2: 421722.510000	power_cost_p2: 40.063055
+	
+2020-11-14 11:18:46.092 CET [20925] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:18:46.092 CET [20925] LOG:  compare_path_costs:	total_cost_p1: 373521.765833	power_cost_p1: 39.910000	total_cost_p2: 421722.510000	power_cost_p2: 40.063055
+	
+2020-11-14 11:18:46.092 CET [20925] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:18:46.092 CET [20925] LOG:  compare_path_costs:	total_cost_p1: 373521.765833	power_cost_p1: 39.910000	total_cost_p2: 421722.510000	power_cost_p2: 40.063055
+	
+2020-11-14 11:18:46.092 CET [20925] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:18:46.092 CET [20925] LOG:  compare_path_costs:	total_cost_p1: 373521.765833	power_cost_p1: 39.910000	total_cost_p2: 421722.510000	power_cost_p2: 40.063055
+	
+2020-11-14 11:18:46.092 CET [20925] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:18:46.096 CET [21065] ERROR:  unrecognized token: "false"
+2020-11-14 11:18:46.096 CET [21064] ERROR:  unrecognized token: "false"
+2020-11-14 11:18:46.096 CET [20925] ERROR:  unrecognized token: "false"
+2020-11-14 11:18:46.096 CET [20925] CONTEXT:  parallel worker
+2020-11-14 11:18:46.096 CET [20925] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:18:46.097 CET [20825] LOG:  worker process: parallel worker for PID 20925 (PID 21064) exited with exit code 1
+2020-11-14 11:18:46.097 CET [20825] LOG:  worker process: parallel worker for PID 20925 (PID 21065) exited with exit code 1
+2020-11-14 11:26:51.213 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 432115.130000	power_cost_p1: 39.910000	total_cost_p2: 562346.585000	power_cost_p2: 40.317157
+	
+2020-11-14 11:26:51.213 CET [21373] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:26:51.213 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 432115.130000	power_cost_p1: 39.910000	total_cost_p2: 562346.585000	power_cost_p2: 40.317157
+	
+2020-11-14 11:26:51.213 CET [21373] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:26:51.213 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 432115.130000	power_cost_p1: 39.910000	total_cost_p2: 562346.585000	power_cost_p2: 40.317157
+	
+2020-11-14 11:26:51.213 CET [21373] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:26:51.213 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 432115.130000	power_cost_p1: 39.910000	total_cost_p2: 562346.585000	power_cost_p2: 40.317157
+	
+2020-11-14 11:26:51.213 CET [21373] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:26:51.217 CET [21376] ERROR:  unrecognized token: "false"
+2020-11-14 11:26:51.217 CET [21373] ERROR:  unrecognized token: "false"
+2020-11-14 11:26:51.217 CET [21373] CONTEXT:  parallel worker
+2020-11-14 11:26:51.217 CET [21373] STATEMENT:  select count(*) from lineitem;
+2020-11-14 11:26:51.217 CET [20825] LOG:  worker process: parallel worker for PID 21373 (PID 21376) exited with exit code 1
+2020-11-14 11:26:51.217 CET [21375] ERROR:  unrecognized token: "false"
+2020-11-14 11:26:51.218 CET [20825] LOG:  worker process: parallel worker for PID 21373 (PID 21375) exited with exit code 1
+2020-11-14 11:29:41.068 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 14093.975000	power_cost_p1: 39.910000	total_cost_p2: 16375.010000	power_cost_p2: 39.920223
+	
+2020-11-14 11:29:41.068 CET [21373] STATEMENT:  select count(*) from customer;
+2020-11-14 11:29:41.068 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 14093.975000	power_cost_p1: 39.910000	total_cost_p2: 16375.010000	power_cost_p2: 39.920223
+	
+2020-11-14 11:29:41.068 CET [21373] STATEMENT:  select count(*) from customer;
+2020-11-14 11:29:41.068 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 14093.975000	power_cost_p1: 39.910000	total_cost_p2: 16375.010000	power_cost_p2: 39.920223
+	
+2020-11-14 11:29:41.068 CET [21373] STATEMENT:  select count(*) from customer;
+2020-11-14 11:29:41.068 CET [21373] LOG:  compare_path_costs:	total_cost_p1: 14093.975000	power_cost_p1: 39.910000	total_cost_p2: 16375.010000	power_cost_p2: 39.920223
+	
+2020-11-14 11:29:41.068 CET [21373] STATEMENT:  select count(*) from customer;
+2020-11-14 11:29:41.072 CET [21403] ERROR:  unrecognized token: "false"
+2020-11-14 11:29:41.072 CET [21404] ERROR:  unrecognized token: "false"
+2020-11-14 11:29:41.072 CET [21373] ERROR:  unrecognized token: "false"
+2020-11-14 11:29:41.072 CET [21373] CONTEXT:  parallel worker
+2020-11-14 11:29:41.072 CET [21373] STATEMENT:  select count(*) from customer;
+2020-11-14 11:29:41.073 CET [20825] LOG:  worker process: parallel worker for PID 21373 (PID 21403) exited with exit code 1
+2020-11-14 11:29:41.073 CET [20825] LOG:  worker process: parallel worker for PID 21373 (PID 21404) exited with exit code 1
+2020-11-14 11:30:11.039 CET [20825] LOG:  received smart shutdown request
+2020-11-14 11:30:11.402 CET [20825] LOG:  worker process: logical replication launcher (PID 20832) exited with exit code 1
+2020-11-14 11:30:11.402 CET [20825] LOG:  received SIGHUP, reloading configuration files
+2020-11-14 11:30:11.402 CET [20827] LOG:  shutting down
+2020-11-14 11:30:12.981 CET [20825] LOG:  database system is shut down
